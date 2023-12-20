@@ -1,4 +1,4 @@
-import { Heading } from "../index";
+import { Heading, SocialIcon } from "../index";
 import payments from "../../assets/payments.png";
 import { FaLocationArrow, FaMobileAlt } from "react-icons/fa";
 import {
@@ -22,6 +22,9 @@ const Footer = () => {
               Architecto iusto accusantium exercitationem voluptates quis
               molestiae ipsa? Molestiae ipsa placeat labore!
             </p>
+          </li>
+          <li>
+            <SocialIcon />
           </li>
         </FooterContent>
         <FooterContent>

@@ -9,6 +9,11 @@ import Popular from "./Popular/Popular";
 import Card from "./Card/Card";
 import Newsletter from "./Newsletter/Newsletter";
 import Footer from "./Footer/Footer";
+import ProductDisplay from "./ProductDisplay/ProductDisplay";
+import ProductInfo from "./ProductInfo/ProductInfo";
+import ProductDescription from "./ProductDescription/ProductDescription";
+import RelatedItem from "./RelatedItem/RelatedItem";
+import SocialIcon from "./SocialIcon/SocialIcon";
 
 export {
   Navbar,
@@ -23,4 +28,9 @@ export {
   Card,
   Newsletter,
   Footer,
+  ProductDisplay,
+  ProductInfo,
+  ProductDescription,
+  RelatedItem,
+  SocialIcon,
 };

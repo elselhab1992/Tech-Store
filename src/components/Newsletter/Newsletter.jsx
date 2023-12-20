@@ -1,4 +1,4 @@
-import { PrimaryButton } from "../index";
+import { PrimaryButton, SocialIcon } from "../index";
 import {
   Section,
   NewsletterText,
@@ -25,6 +25,7 @@ const Newsletter = () => {
         <PrimaryButton>Subscribe</PrimaryButton>
       </InputContainer>
       <Policy>will be used in accordance with our privacy policy</Policy>
+      <SocialIcon />
     </Section>
   );
 };

@@ -1,4 +1,4 @@
-import { Hero, Category, Popular, Newsletter, Footer } from "../../components";
+import { Hero, Category, Popular } from "../../components";
 
 const Home = () => {
   return (
@@ -6,8 +6,6 @@ const Home = () => {
       <Hero />
       <Category />
       <Popular />
-      <Newsletter />
-      <Footer />
     </main>
   );
 };

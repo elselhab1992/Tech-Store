@@ -1,8 +1,8 @@
 import GlobalStyles from "./GlobalStyles";
 import Theme from "./Theme";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home, Cart } from "./Pages";
-import { Header } from "./components";
+import { Home, Cart, Product } from "./Pages/index";
+import { Header, Newsletter, Footer } from "./components";
 
 function App() {
   return (
@@ -13,8 +13,14 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/product" element={<Product />}>
+              <Route path=":productId" element={<Product />} />
+            </Route>
+            {/* <Route path="/product/:id" element={<Product />} /> */}
             <Route path="/cart" element={<Cart />} />
           </Routes>
+          <Newsletter />
+          <Footer />
         </BrowserRouter>
       </Theme>
     </>
