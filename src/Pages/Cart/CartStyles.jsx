@@ -3,10 +3,10 @@ import styled from "styled-components";
 const Section = styled.section`
   width: 100%;
   min-height: 55vh;
+  padding-top: 50px;
 `;
 
 const Container = styled.div`
-  padding-top: 50px;
   color: ${(props) => props.theme.colors.primary};
 `;
 

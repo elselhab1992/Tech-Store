@@ -33,8 +33,6 @@ const Cart = () => {
           <EmptyCart />
         )}
       </Container>
-
-      <div></div>
     </Section>
   );
 };
