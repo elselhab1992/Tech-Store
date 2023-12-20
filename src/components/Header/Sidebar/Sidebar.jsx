@@ -1,8 +1,12 @@
 /* eslint-disable react/prop-types */
 import { SideBar, MobileLink, CartCount } from "./SidebarStyles";
 import { BsFillCartCheckFill } from "react-icons/bs";
+import { useGlobalContext } from "../../Context/Context";
 
 const Sidebar = ({ click, closeMenu }) => {
+  const { getTotalCartItems } = useGlobalContext();
+  const totalCartItems = getTotalCartItems();
+
   return (
     <aside>
       <SideBar menu={+click}>
@@ -27,7 +31,7 @@ const Sidebar = ({ click, closeMenu }) => {
           </MobileLink>
         </li>
         <li>
-          <CartCount>0</CartCount>
+          <CartCount>{totalCartItems}</CartCount>
         </li>
       </SideBar>
     </aside>

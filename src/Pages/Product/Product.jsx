@@ -8,7 +8,6 @@ import {
   Heading,
   RelatedItem,
 } from "../../components";
-import { IoMdCart } from "react-icons/io";
 import {
   Section,
   Add,
@@ -19,12 +18,17 @@ import {
   Minus,
   BottomInfo,
   MoreInfo,
+  CartIcon,
   OrderContainer,
   ImgContainer,
   Related,
 } from "./ProductStyles";
+import { useGlobalContext } from "../../components/Context/Context";
 
 const Product = () => {
+  const { addToCart, removeFromCart, cartItems, updateCartAmount } =
+    useGlobalContext();
+
   const { productId } = useParams();
   const product = popular.find((item) => item.id === Number(productId));
 
@@ -41,12 +45,17 @@ const Product = () => {
           <ProductDescription />
           <OrderContainer>
             <InputContainer>
-              <Minus />
-              <Input />
-              <Add />
+              <Minus onClick={() => removeFromCart(product.id)} />
+              <Input
+                id="amount"
+                name="amount"
+                value={cartItems[product.id]}
+                onChange={(e) => updateCartAmount(e.target.value, product.id)}
+              />
+              <Add onClick={() => addToCart(product.id)} />
             </InputContainer>
-            <Button>
-              Add To Cart <IoMdCart size={20} style={{ color: "#fff" }} />
+            <Button onClick={() => addToCart(product.id)}>
+              Add To Cart <CartIcon />
             </Button>
           </OrderContainer>
           <BottomInfo>

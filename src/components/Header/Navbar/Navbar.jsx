@@ -3,8 +3,12 @@ import { FaBars, FaTimes, FaShopify } from "react-icons/fa";
 import { BsFillCartCheckFill } from "react-icons/bs";
 import { Header, NavIcons, NavLinks, NavLink, Count } from "./NavbarStyles";
 import { Link } from "react-router-dom";
+import { useGlobalContext } from "../../Context/Context";
 
 function Navbar({ click, handleClick }) {
+  const { getTotalCartItems } = useGlobalContext();
+  const totalCartItems = getTotalCartItems();
+
   return (
     <Header>
       <Link to="/">
@@ -27,7 +31,7 @@ function Navbar({ click, handleClick }) {
             </NavLink>
           </li>
           <li>
-            <Count>0</Count>
+            <Count>{totalCartItems}</Count>
           </li>
         </NavLinks>
       </nav>

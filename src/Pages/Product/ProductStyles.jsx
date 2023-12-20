@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { FiMinusSquare } from "react-icons/fi";
 import { FaRegSquarePlus } from "react-icons/fa6";
 import { PrimaryBtn } from "../../components/Button/ButtonStyles";
+import { IoMdCart } from "react-icons/io";
 
 const Section = styled.section`
   padding: 3rem 18rem;
@@ -94,6 +95,14 @@ const Button = styled(PrimaryBtn)`
   justify-content: center;
   align-items: center;
   gap: 5px;
+
+  &:hover {
+    color: ${(props) => props.theme.colors.secondary};
+  }
+`;
+
+const CartIcon = styled(IoMdCart)`
+  font-size: 25px;
 `;
 
 const BottomInfo = styled.div`
@@ -129,6 +138,7 @@ export {
   Add,
   InputContainer,
   Button,
+  CartIcon,
   BottomInfo,
   MoreInfo,
   Related,

@@ -14,6 +14,10 @@ import ProductInfo from "./ProductInfo/ProductInfo";
 import ProductDescription from "./ProductDescription/ProductDescription";
 import RelatedItem from "./RelatedItem/RelatedItem";
 import SocialIcon from "./SocialIcon/SocialIcon";
+import CartItem from "./CartItem/CartItem";
+import EmptyCart from "./EmptyCart/EmptyCart";
+import Promo from "./Promo/Promo";
+import SubTotal from "./SubTotal/SubTotal";
 
 export {
   Navbar,
@@ -33,4 +37,8 @@ export {
   ProductDescription,
   RelatedItem,
   SocialIcon,
+  CartItem,
+  EmptyCart,
+  Promo,
+  SubTotal,
 };
