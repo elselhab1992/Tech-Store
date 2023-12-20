@@ -186,28 +186,28 @@ const popular = [
 
 const relatedProducts = [
   {
-    id: 31,
+    id: 3,
     category: "earbuds",
     img: popular3,
     title: "earbuds Lorem Ipsum Dolor",
     price: "99",
   },
   {
-    id: 32,
+    id: 7,
     category: "headphone",
     img: popular7,
     title: "headphone Lorem Ipsum Dolor",
     price: "150",
   },
   {
-    id: 33,
+    id: 12,
     category: "speaker",
     img: popular12,
     title: "speaker Lorem Ipsum Dolor",
     price: "299",
   },
   {
-    id: 34,
+    id: 18,
     category: "watch",
     img: popular18,
     title: "watch Lorem Ipsum Dolor",

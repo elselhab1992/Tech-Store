@@ -21,6 +21,7 @@ import {
   MoreInfo,
   OrderContainer,
   ImgContainer,
+  Related,
 } from "./ProductStyles";
 
 const Product = () => {
@@ -62,8 +63,10 @@ const Product = () => {
           </BottomInfo>
         </div>
       </Container>
-      <Heading title="related products" />
-      <hr />
+      <Related>
+        <Heading title="related products" />
+        <hr />
+      </Related>
       <RelatedItem />
     </Section>
   );

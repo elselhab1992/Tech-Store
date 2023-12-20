@@ -34,7 +34,9 @@ const Img = styled.img`
 `;
 
 const NavLink = styled(Link)`
-  color: ${(props) => props.theme.colors.primary};
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export { Container, Img, NavLink };

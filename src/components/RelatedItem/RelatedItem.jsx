@@ -1,20 +1,16 @@
+/* eslint-disable no-unused-vars */
 import { relatedProducts } from "../../data";
-import { Link } from "react-router-dom";
-import { Section, Container, Img } from "./RelatedItemStyles";
+import { Card } from "../index";
+import { Section, Container } from "./RelatedItemStyles";
 
 const RelatedItem = () => {
   return (
     <Section>
       {relatedProducts.map((product) => {
+        const { id, title, price, img } = product;
         return (
-          <Container key={product.id}>
-            <Link to={`/product/${product.id}`}>
-              <Img
-                src={product.img}
-                alt={product.title}
-                onClick={window.scrollTo(0, 0)}
-              />
-            </Link>
+          <Container key={id}>
+            <Card {...product} />
           </Container>
         );
       })}
