@@ -8,7 +8,6 @@ const Section = styled.section`
   @media (min-width: 300px) {
     grid-template-columns: 1fr;
     gap: 1rem;
-    text-align: center;
   }
 
   @media (min-width: 768px) {
@@ -31,9 +30,13 @@ const Container = styled.div`
 `;
 
 const Img = styled.img`
-  width: 300px;
+  width: 100%;
   background-color: #ededed;
   border-radius: 10px;
+
+  @media (min-width: 768px) {
+    width: 300px;
+  }
 `;
 
 export { Section, Container, Img };
