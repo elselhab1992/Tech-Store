@@ -38,7 +38,7 @@ const categories = [
   },
   {
     id: 3,
-    category: "watche",
+    category: "watch",
     img: cat3,
   },
   {

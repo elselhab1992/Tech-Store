@@ -32,6 +32,9 @@ const MobileLink = styled(Link)`
 const CartCount = styled(Count)`
   margin-top: -110px;
   margin-left: 40px;
+  width: 25px;
+  height: 25px;
+  border-radius: 12px;
 `;
 
 export { SideBar, MobileLink, CartCount };

@@ -3,8 +3,8 @@ import Sidebar from "./Header/Sidebar/Sidebar";
 import Header from "./Header/Header";
 import Hero from "./Hero/Hero";
 import { PrimaryButton, SecondaryButton } from "./Button/Button";
-import Category from "./Category/Category";
 import Heading from "./Heading/Heading";
+import Category from "./Category/Category";
 import Popular from "./Popular/Popular";
 import Card from "./Card/Card";
 import Newsletter from "./Newsletter/Newsletter";
@@ -26,8 +26,8 @@ export {
   Hero,
   PrimaryButton,
   SecondaryButton,
-  Category,
   Heading,
+  Category,
   Popular,
   Card,
   Newsletter,
